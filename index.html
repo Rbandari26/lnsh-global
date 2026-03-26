@@ -48,9 +48,17 @@ font-weight:500;
 nav a:hover{color:#ffe0c2;}
 
 .hero{
-background:transparent;
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('images/mapexp.jpeg') center center / cover no-repeat;
 text-align:center;
 padding:160px 20px;
+}
+  .hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 .hero h2{font-size:50px;font-weight:700;}
