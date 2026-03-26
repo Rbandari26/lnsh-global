@@ -193,14 +193,24 @@ cursor:pointer;
 </div>
 </section>
 
-<section class="section form" id="contact">
-<h2>Send Inquiry</h2>
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="4" placeholder="Message"></textarea>
-<button class="btn">Submit</button>
-</form>
-</section>
+  <section class="section form" id="contact">
+    <h2>Send Inquiry</h2>
+    
+    <form action="https://formspree.io/f/mwvweryd" method="POST">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <textarea name="message" placeholder="Message"></textarea>
+    
+    <input type="hidden" name="_subject" value="New Export Inquiry from Website">
+    
+    <button class="btn" type="submit">Submit</button>
+    
+    </form>
+    
+    </section>
 
 <footer>
 <p>Email: contact@lnshglobal.com | Phone: +91 8143617091</p>
