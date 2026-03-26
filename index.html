@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LNSH Global - Premium Import Export</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url('images/mapexp.jpeg') no-repeat center center fixed;
+background-size: cover;
+color:#fff;
+scroll-behavior:smooth;
+}
+
+header{
+background:#ff7a00;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{color:#ffe0c2;}
+
+.hero{
+background:transparent;
+text-align:center;
+padding:160px 20px;
+}
+
+.hero h2{font-size:50px;font-weight:700;}
+.hero p{margin:20px 0;font-size:18px;}
+
+.btn{
+background:#ff7a00;
+color:white;
+padding:14px 35px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
+background: rgba(0,0,0,0.6);
+backdrop-filter: blur(6px);
+}
+
+.section h2{font-size:32px;margin-bottom:20px;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background: rgba(255,255,255,0.1);
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{transform:translateY(-10px);}
+
+.products img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+background:#ff7a00;
+color:white;
+padding:50px 20px;
+}
+
+.stats div{margin:15px;}
+.stats h3{font-size:28px;}
+
+.testimonials{
+background: rgba(0,0,0,0.6);
+}
+
+.form input,.form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:none;
+}
+
+footer{
+background: rgba(0,0,0,0.8);
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>LNSH Global</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h2>Global Import Export Solutions</h2>
+<p>Trusted partner for worldwide trade & logistics</p>
+<a href="#contact" class="btn">Start Business</a>
+</section>
+
+<section class="stats">
+<div><h3>50+</h3><p>Countries</p></div>
+<div><h3>200+</h3><p>Clients</p></div>
+<div><h3>500+</h3><p>Shipments</p></div>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Import</h3><p>Global sourcing solutions</p></div>
+<div class="card"><h3>Export</h3><p>Worldwide business expansion</p></div>
+<div class="card"><h3>Logistics</h3><p>End-to-end shipping support</p></div>
+</div>
+</section>
+
+<section class="section products" id="products">
+<h2>Our Products</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0"><h4>Auto Parts</h4></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"><h4>Agriculture & Food Products</h4></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1516685018646-549d88c6a4c9"><h4>Sea Food Products</h4></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952"><h4>Industrial</h4></div>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>About Us</h2>
+<p>LNSH Global is a professional import-export company delivering quality products worldwide with trust and efficiency.</p>
+</section>
+
+<section class="section testimonials">
+<h2>What Clients Say</h2>
+<div class="grid">
+<div class="card"><p>"Reliable export partner"</p><h4>- UAE Client</h4></div>
+<div class="card"><p>"Best quality products"</p><h4>- USA Buyer</h4></div>
+</div>
+</section>
+
+<section class="section form" id="contact">
+<h2>Send Inquiry</h2>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Message"></textarea>
+<button class="btn">Submit</button>
+</form>
+</section>
+
+<footer>
+<p>Email: contact@lnshglobal.com | Phone: +91 8143617091</p>
+<p>© 2026 LNSH Global</p>
+</footer>
+
+<!-- CHAT POPUP -->
+<div id="chatBox" style="position:fixed;bottom:90px;right:20px;width:260px;background:white;border-radius:10px;padding:15px;display:none;">
+<p style="color:black;">Chat with us on WhatsApp</p>
+<a href="https://wa.me/918143617091" target="_blank" style="background:#25D366;color:white;padding:10px;display:block;text-align:center;border-radius:5px;text-decoration:none;">Open WhatsApp</a>
+<p style="color:black;font-size:13px;margin-top:10px;">No WhatsApp?</p>
+<p style="color:black;font-size:13px;">📞 +91 8143617091</p>
+<p style="color:black;font-size:13px;">✉ contactlnshglobal@gmail.com</p>
+</div>
+
+<div class="whatsapp" onclick="toggleChat()">💬</div>
+
+<script>
+function toggleChat(){
+var box=document.getElementById('chatBox');
+box.style.display=box.style.display==='block'?'none':'block';
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
