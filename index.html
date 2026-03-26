@@ -12,10 +12,18 @@
 
 body{
 background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),
-url('images/domain.jpeg') no-repeat center center fixed;
+url('images/domain.jpeg') no-repeat center center;
 background-size: cover;
+background-attachment: fixed;
 color:#fff;
 scroll-behavior:smooth;
+}
+  @media (max-width: 768px){
+  body{
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 header{
